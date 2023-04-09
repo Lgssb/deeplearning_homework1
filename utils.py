@@ -27,11 +27,6 @@ def accuracy(y_true, y_pred):
     return len(np.where(y_true==y_pred)[0]) / len(y_true)
 
 
-# 绘制手写数字的灰度图
-def show_image(data, index):
-    plt.imshow(data.reshape((28, 28)), cmap='gray')
-    plt.savefig(f'./Parameters_images/{index}.jpg')
-
 
 # 绘制 Loss 曲线
 def plot_loss(path, loss_train, loss_test):
